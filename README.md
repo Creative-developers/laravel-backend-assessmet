@@ -111,7 +111,7 @@ This project is a Laravel-based RESTful API that provides authentication, user m
 | ---------- | -------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------- | ------------- |
 | **GET**    | `/api/projects`                              | Get all projects             | `filters[name]` (from Project model)                                      | Yes           |
 |            |                                              |                              | Supports operators: `<`, `>`, `=`, `like` (e.g., `filters[price][<]=150`) |               |
-| **POST**   | `/api/projects`                              | Create a new project         | Project details (e.g., name, description, etc.)                           | Yes           |
+| **POST**   | `/api/projects`                              | Create a new project         | Project details (e.g., name, status)                                      | Yes           |
 | **GET**    | `/api/projects/{project}`                    | Get a single project         | `project` (Project ID)                                                    | Yes           |
 | **PUT**    | `/api/projects/{project}`                    | Update an existing project   | `project` (Project ID), Project details                                   | Yes           |
 | **DELETE** | `/api/projects/{project}`                    | Delete a project             | `project` (Project ID)                                                    | Yes           |
@@ -128,16 +128,20 @@ This project is a Laravel-based RESTful API that provides authentication, user m
     "status": 1,
     "attributes": [
         {
-            "attribute_id": 1,
-            "value": "Sales" // Value is the column in attributeValue
+            "attribute_id": 1, // from attribute model ( for eg: attribute_id: 1, name: "deparment", type: "text"),
+            "value": "Sales" // Value is the column in attributeValue which will be created dynamically
         },
         {
-            "attribute_id": 2,
+            "attribute_id": 2, // from attribute model ( for eg: attribute_id: 2, name: "start_date", type: "date"),
             "value": "2025-02-01"
         },
         {
-            "attribute_id": 3,
+            "attribute_id": 3, // from attribute model ( for eg: attribute_id: 3, name: "end_date", type: "date"),
             "value": "2025-02-11"
+        },
+        {
+            "attribute_id": 4, // from attribute model ( for eg: attribute_id: 4, name: "price", type: "number"),
+            "value": 50
         }
     ]
 }
