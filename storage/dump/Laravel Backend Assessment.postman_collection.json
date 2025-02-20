@@ -1,0 +1,3017 @@
+{
+	"info": {
+		"_postman_id": "5ea017cb-38bc-4b9b-800b-2644de4b1ad0",
+		"name": "Laravel Backend Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9901744"
+	},
+	"item": [
+		{
+			"name": "Attribute",
+			"item": [
+				{
+					"name": "Create Attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"price\",\n    \"type\":\"number\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/attributes",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"attributes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Attribute",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"price\",\n    \"type\":\"number\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/attributes",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"attributes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:04:31 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"price\",\n    \"type\": \"number\",\n    \"updated_at\": \"2025-02-20T10:04:31.000000Z\",\n    \"created_at\": \"2025-02-20T10:04:31.000000Z\",\n    \"id\": 5\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"department\",\n    \"type\":\"text\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/attributes/1",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"attributes",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Attribute",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"department\",\n    \"type\":\"text\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/attributes/1",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"attributes",
+										"1"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:06:16 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"department\",\n    \"type\": \"text\",\n    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n    \"updated_at\": \"2025-02-20T10:06:16.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Attributes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/attributes",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"attributes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Attributes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/attributes",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"attributes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:06:34 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"department\",\n        \"type\": \"text\",\n        \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n        \"updated_at\": \"2025-02-20T10:06:16.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"start_date\",\n        \"type\": \"date\",\n        \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n        \"updated_at\": \"2025-02-19T13:38:30.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"end_date\",\n        \"type\": \"date\",\n        \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n        \"updated_at\": \"2025-02-19T13:38:30.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"price\",\n        \"type\": \"number\",\n        \"created_at\": \"2025-02-19T14:54:39.000000Z\",\n        \"updated_at\": \"2025-02-19T14:54:39.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Show Attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/attributes/2",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"attributes",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show Attribute",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/attributes/2",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"attributes",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:07:01 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"start_date\",\n    \"type\": \"date\",\n    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n    \"updated_at\": \"2025-02-19T13:38:30.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/attributes/4",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"attributes",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Attribute",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/attributes/4",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"attributes",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:07:18 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Attribute deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Attribuet Values",
+			"item": [
+				{
+					"name": "Get Attribute Values",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/attributeValues",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"attributeValues"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Attribute Values",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/attributeValues",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"attributeValues"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:09:18 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"attribute_id\": 1,\n        \"entity_id\": 1,\n        \"value\": \"IT\",\n        \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n        \"updated_at\": \"2025-02-19T13:44:38.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"attribute_id\": 2,\n        \"entity_id\": 1,\n        \"value\": \"2025-01-01\",\n        \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n        \"updated_at\": \"2025-02-19T13:44:38.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"attribute_id\": 3,\n        \"entity_id\": 1,\n        \"value\": \"2025-01-11\",\n        \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n        \"updated_at\": \"2025-02-19T13:44:38.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"attribute_id\": 1,\n        \"entity_id\": 2,\n        \"value\": \"Sales\",\n        \"created_at\": \"2025-02-19T15:25:04.000000Z\",\n        \"updated_at\": \"2025-02-19T15:25:04.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"attribute_id\": 2,\n        \"entity_id\": 2,\n        \"value\": \"2025-02-01\",\n        \"created_at\": \"2025-02-19T15:25:04.000000Z\",\n        \"updated_at\": \"2025-02-19T15:25:04.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"attribute_id\": 3,\n        \"entity_id\": 2,\n        \"value\": \"2025-02-11\",\n        \"created_at\": \"2025-02-19T15:25:04.000000Z\",\n        \"updated_at\": \"2025-02-19T15:25:04.000000Z\"\n    },\n    {\n        \"id\": 9,\n        \"attribute_id\": 1,\n        \"entity_id\": 5,\n        \"value\": \"Finance\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 10,\n        \"attribute_id\": 1,\n        \"entity_id\": 6,\n        \"value\": \"Marketing\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 11,\n        \"attribute_id\": 1,\n        \"entity_id\": 7,\n        \"value\": \"Sales\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 12,\n        \"attribute_id\": 1,\n        \"entity_id\": 8,\n        \"value\": \"IT\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 13,\n        \"attribute_id\": 1,\n        \"entity_id\": 9,\n        \"value\": \"HR\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 14,\n        \"attribute_id\": 1,\n        \"entity_id\": 10,\n        \"value\": \"Sales\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 15,\n        \"attribute_id\": 1,\n        \"entity_id\": 11,\n        \"value\": \"Finance\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 16,\n        \"attribute_id\": 1,\n        \"entity_id\": 12,\n        \"value\": \"Finance\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 17,\n        \"attribute_id\": 1,\n        \"entity_id\": 13,\n        \"value\": \"HR\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 18,\n        \"attribute_id\": 1,\n        \"entity_id\": 14,\n        \"value\": \"Marketing\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Show Attribute Value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/attributeValues/2",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"attributeValues",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show Attribute Value",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/attributeValues/2",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"attributeValues",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:10:07 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"attribute_id\": 2,\n    \"entity_id\": 1,\n    \"value\": \"2025-01-01\",\n    \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n    \"updated_at\": \"2025-02-19T13:44:38.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Attribute Value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/attributeValues/18",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"attributeValues",
+								"18"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Attribute",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/attributeValues/18",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"attributeValues",
+										"18"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:11:08 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Attribute Value deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "Create Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Project 2B\",\n    \"status\":1,\n    \"attributes\":[\n        {\n            \"attribute_id\":1,\n            \"value\":\"Sales\"\n        },\n        {\n            \"attribute_id\":2,\n            \"value\":\"2025-02-01\"\n        },\n        {\n            \"attribute_id\":3,\n            \"value\":\"2025-02-11\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/projects",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Project",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Project 2B\",\n    \"status\":1,\n    \"attributes\":[\n        {\n            \"attribute_id\":1,\n            \"value\":\"Sales\"\n        },\n        {\n            \"attribute_id\":2,\n            \"value\":\"2025-02-01\"\n        },\n        {\n            \"attribute_id\":3,\n            \"value\":\"2025-02-11\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/projects",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"projects"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 11:17:29 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Project created successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    //\"name\":\"Project A\"\n    //\"status\":1,\n    \"attributes\": [\n        {\n            \"attribute_id\": 6,\n            \"value\":55\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/projects/1",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"projects",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Project",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    //\"name\":\"Project A\"\n    //\"status\":1,\n    \"attributes\": [\n        {\n            \"attribute_id\": 6,\n            \"value\":55\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/projects/1",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"projects",
+										"1"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 11:15:09 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Project updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Project A\",\n        \"status\": 2,\n        \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n        \"updated_at\": \"2025-02-19T14:53:47.000000Z\",\n        \"attribute_values\": [\n            {\n                \"id\": 1,\n                \"attribute_id\": 1,\n                \"entity_id\": 1,\n                \"value\": \"IT\",\n                \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n                \"updated_at\": \"2025-02-19T13:44:38.000000Z\"\n            },\n            {\n                \"id\": 2,\n                \"attribute_id\": 2,\n                \"entity_id\": 1,\n                \"value\": \"2025-01-01\",\n                \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n                \"updated_at\": \"2025-02-19T13:44:38.000000Z\"\n            },\n            {\n                \"id\": 3,\n                \"attribute_id\": 3,\n                \"entity_id\": 1,\n                \"value\": \"2025-01-11\",\n                \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n                \"updated_at\": \"2025-02-19T13:44:38.000000Z\"\n            },\n            {\n                \"id\": 19,\n                \"attribute_id\": 6,\n                \"entity_id\": 1,\n                \"value\": \"55\",\n                \"created_at\": \"2025-02-20T11:15:09.000000Z\",\n                \"updated_at\": \"2025-02-20T11:15:09.000000Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Projects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/projects?filters[department]=IT&filters[name]=Project A&filters[price][<]=150",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "filters[name][like]",
+									"value": "Pro2",
+									"disabled": true
+								},
+								{
+									"key": "filters[department]",
+									"value": "IT"
+								},
+								{
+									"key": "filters[name]",
+									"value": "Project A"
+								},
+								{
+									"key": "filters[price][<]",
+									"value": "150"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Projects",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/projects?filters[department]=IT&filters[name]=Project A&filters[price][<]=150",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"projects"
+									],
+									"query": [
+										{
+											"key": "filters[name][like]",
+											"value": "Pro2",
+											"disabled": true
+										},
+										{
+											"key": "filters[department]",
+											"value": "IT"
+										},
+										{
+											"key": "filters[name]",
+											"value": "Project A"
+										},
+										{
+											"key": "filters[price][<]",
+											"value": "150"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 11:16:32 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Project A\",\n        \"status\": 2,\n        \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n        \"updated_at\": \"2025-02-19T14:53:47.000000Z\",\n        \"attribute_values\": [\n            {\n                \"id\": 1,\n                \"attribute_id\": 1,\n                \"entity_id\": 1,\n                \"value\": \"IT\",\n                \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n                \"updated_at\": \"2025-02-19T13:44:38.000000Z\",\n                \"attribute\": {\n                    \"id\": 1,\n                    \"name\": \"department\",\n                    \"type\": \"text\",\n                    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                    \"updated_at\": \"2025-02-20T10:06:16.000000Z\"\n                }\n            },\n            {\n                \"id\": 2,\n                \"attribute_id\": 2,\n                \"entity_id\": 1,\n                \"value\": \"2025-01-01\",\n                \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n                \"updated_at\": \"2025-02-19T13:44:38.000000Z\",\n                \"attribute\": {\n                    \"id\": 2,\n                    \"name\": \"start_date\",\n                    \"type\": \"date\",\n                    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                    \"updated_at\": \"2025-02-19T13:38:30.000000Z\"\n                }\n            },\n            {\n                \"id\": 3,\n                \"attribute_id\": 3,\n                \"entity_id\": 1,\n                \"value\": \"2025-01-11\",\n                \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n                \"updated_at\": \"2025-02-19T13:44:38.000000Z\",\n                \"attribute\": {\n                    \"id\": 3,\n                    \"name\": \"end_date\",\n                    \"type\": \"date\",\n                    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                    \"updated_at\": \"2025-02-19T13:38:30.000000Z\"\n                }\n            },\n            {\n                \"id\": 19,\n                \"attribute_id\": 6,\n                \"entity_id\": 1,\n                \"value\": \"55\",\n                \"created_at\": \"2025-02-20T11:15:09.000000Z\",\n                \"updated_at\": \"2025-02-20T11:15:09.000000Z\",\n                \"attribute\": {\n                    \"id\": 6,\n                    \"name\": \"price\",\n                    \"type\": \"number\",\n                    \"created_at\": \"2025-02-20T10:07:28.000000Z\",\n                    \"updated_at\": \"2025-02-20T10:07:28.000000Z\"\n                }\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Assign User to Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/projects/1/assign-user/8",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"projects",
+								"1",
+								"assign-user",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Assign User to Project",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/projects/1/assign-user/8",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"projects",
+										"1",
+										"assign-user",
+										"8"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 11:25:06 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User assigned to project successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Project A\",\n        \"status\": 2,\n        \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n        \"updated_at\": \"2025-02-19T14:53:47.000000Z\",\n        \"users\": [\n            {\n                \"id\": 2,\n                \"first_name\": \"Test\",\n                \"last_name\": \"user\",\n                \"email\": \"ahmednasrullah771@gmail.com\",\n                \"status\": 1,\n                \"created_at\": \"2025-02-19T13:17:12.000000Z\",\n                \"updated_at\": \"2025-02-19T13:17:12.000000Z\",\n                \"pivot\": {\n                    \"project_id\": 1,\n                    \"user_id\": 2\n                }\n            },\n            {\n                \"id\": 8,\n                \"first_name\": \"Irwin\",\n                \"last_name\": \"Gaylord\",\n                \"email\": \"dianna38@example.com\",\n                \"status\": 1,\n                \"created_at\": \"2025-02-19T13:42:19.000000Z\",\n                \"updated_at\": \"2025-02-19T13:42:19.000000Z\",\n                \"pivot\": {\n                    \"project_id\": 1,\n                    \"user_id\": 8\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Remove User from Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/projects/1/remove-user/8",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"projects",
+								"1",
+								"remove-user",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Remove User from Project",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/projects/1/remove-user/8",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"projects",
+										"1",
+										"remove-user",
+										"8"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 11:26:00 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User removed from project successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Project A\",\n        \"status\": 2,\n        \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n        \"updated_at\": \"2025-02-19T14:53:47.000000Z\",\n        \"users\": [\n            {\n                \"id\": 2,\n                \"first_name\": \"Test\",\n                \"last_name\": \"user\",\n                \"email\": \"ahmednasrullah771@gmail.com\",\n                \"status\": 1,\n                \"created_at\": \"2025-02-19T13:17:12.000000Z\",\n                \"updated_at\": \"2025-02-19T13:17:12.000000Z\",\n                \"pivot\": {\n                    \"project_id\": 1,\n                    \"user_id\": 2\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Project by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/projects/1",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"projects",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Project By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/projects/1",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"projects",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 11:21:17 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Project A\",\n    \"status\": 2,\n    \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n    \"updated_at\": \"2025-02-19T14:53:47.000000Z\",\n    \"attribute_values\": [\n        {\n            \"id\": 1,\n            \"attribute_id\": 1,\n            \"entity_id\": 1,\n            \"value\": \"IT\",\n            \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n            \"updated_at\": \"2025-02-19T13:44:38.000000Z\",\n            \"attribute\": {\n                \"id\": 1,\n                \"name\": \"department\",\n                \"type\": \"text\",\n                \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                \"updated_at\": \"2025-02-20T10:06:16.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"attribute_id\": 2,\n            \"entity_id\": 1,\n            \"value\": \"2025-01-01\",\n            \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n            \"updated_at\": \"2025-02-19T13:44:38.000000Z\",\n            \"attribute\": {\n                \"id\": 2,\n                \"name\": \"start_date\",\n                \"type\": \"date\",\n                \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                \"updated_at\": \"2025-02-19T13:38:30.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"attribute_id\": 3,\n            \"entity_id\": 1,\n            \"value\": \"2025-01-11\",\n            \"created_at\": \"2025-02-19T13:44:38.000000Z\",\n            \"updated_at\": \"2025-02-19T13:44:38.000000Z\",\n            \"attribute\": {\n                \"id\": 3,\n                \"name\": \"end_date\",\n                \"type\": \"date\",\n                \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                \"updated_at\": \"2025-02-19T13:38:30.000000Z\"\n            }\n        },\n        {\n            \"id\": 19,\n            \"attribute_id\": 6,\n            \"entity_id\": 1,\n            \"value\": \"55\",\n            \"created_at\": \"2025-02-20T11:15:09.000000Z\",\n            \"updated_at\": \"2025-02-20T11:15:09.000000Z\",\n            \"attribute\": {\n                \"id\": 6,\n                \"name\": \"price\",\n                \"type\": \"number\",\n                \"created_at\": \"2025-02-20T10:07:28.000000Z\",\n                \"updated_at\": \"2025-02-20T10:07:28.000000Z\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/projects/19",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"projects",
+								"19"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Project",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/projects/19",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"projects",
+										"19"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 11:23:22 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Project deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\":\"Test\",\n    \"last_name\":\"user\",\n    \"email\": \"testuser123@gmail.com\",\n    \"password\":\"test1122\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/register",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\":\"Test\",\n    \"last_name\":\"user\",\n    \"email\": \"testuser123@gmail.com\",\n    \"password\":\"test1122\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/register",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:12:01 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"first_name\": \"Test\",\n        \"last_name\": \"user\",\n        \"email\": \"testuser123@gmail.com\",\n        \"updated_at\": \"2025-02-20T10:12:01.000000Z\",\n        \"created_at\": \"2025-02-20T10:12:01.000000Z\",\n        \"id\": 13\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"ahmednasrullah77@gmail.com\",\n    \"password\":\"test@1122\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/login",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"ahmednasrullah77@gmail.com\",\n    \"password\":\"test@1122\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/login",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:11:36 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"first_name\": \"Test\",\n        \"last_name\": \"user\",\n        \"email\": \"ahmednasrullah77@gmail.com\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T12:41:04.000000Z\",\n        \"updated_at\": \"2025-02-19T18:46:47.000000Z\"\n    },\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiJjY2M3YmJiYmU0YzM3NjkxMDVlYWQzNWJiZTY0MDIwMGVlNDE3ZWViYTAzMzMyZDllNTAzNmM2Y2Q4ODU2ZmJmYTM5NWYxNmZiYWVmY2NmNiIsImlhdCI6MTc0MDA0NjI5Ni4xNDM0NDYsIm5iZiI6MTc0MDA0NjI5Ni4xNDM0NDgsImV4cCI6MTc3MTU4MjI5Ni4xMzcyMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.fv2dD5FAsCuTVxE0wwNVaUm3HVT3_j3wGQNYhX3ytyszDqmDPVRHQKNx0H8LGqiuWggfbPUOM8fuiwZ7MsVacoN3cSg1kyy0mB-antA9gPRvEsngTIpRPmSJI2ftQCNPi2ZYocZPrFD0wAt34ClSLMGxdqu3ZpDDT7oIaOTKLS4h90kE5SF_CuB_4SmC7hA1W3eVpOOzje5N1LDQn4af_ZUdYFnp2eY9DBWJTO-_DczNECXpM64lervOP2_CLwVK3VtZDz8ybTZkcjZ4hP9Uteg0P2YvM6_vab9Bvy5P9uWUwFbZoOvhCXDVUlCeCdsB2-pwB9nXabzM0q8E1V0nKuxKDq0fahX6iSKsq0aYGK45WijcAAkHkt7WlXPRKQdPJLbFPEtFuvL7pzJCVjCYlJR84M7OUVsGCx0t2Bv1uDadxlSKMxxrR5p-lz33HYCEL-YankJAUEspmYzOLtqP3NzPpnI45n23c51Ti-sG2DkDP9a41KbtZ-SEIKIV-tjogyJ5--jhV-PRFPK5lYPnF1D64ym0XNjI0De76knnI9gLJx9BADDO67C7FRrM-QVAURHUzgTX_AiaSFE4A8gsWjkF_MU-S2WwYqs2B3oaVRN0nD3WFG-1KKQk4lsEGh9-jROOd5OWU_IoGH9_4Sfa4ZMQNizcxMeu8hQwDq_JQfE\"\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/logout",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/logout",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:12:37 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User logged out successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "List Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/users",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/users",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:13:28 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"first_name\": \"Test\",\n        \"last_name\": \"user\",\n        \"email\": \"ahmednasrullah77@gmail.com\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T12:41:04.000000Z\",\n        \"updated_at\": \"2025-02-19T18:46:47.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"first_name\": \"Test\",\n        \"last_name\": \"user\",\n        \"email\": \"ahmednasrullah771@gmail.com\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:17:12.000000Z\",\n        \"updated_at\": \"2025-02-19T13:17:12.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"first_name\": \"Brandy\",\n        \"last_name\": \"Reilly\",\n        \"email\": \"auer.gordon@example.org\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:17.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:17.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"first_name\": \"Jovani\",\n        \"last_name\": \"Stoltenberg\",\n        \"email\": \"hcummerata@example.com\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:17.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:17.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"first_name\": \"Spencer\",\n        \"last_name\": \"Hudson\",\n        \"email\": \"everett.schiller@example.org\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:18.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:18.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"first_name\": \"Rhea\",\n        \"last_name\": \"Blick\",\n        \"email\": \"bridgette.lynch@example.net\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:18.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:18.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"first_name\": \"Carmine\",\n        \"last_name\": \"Kerluke\",\n        \"email\": \"mondricka@example.net\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:18.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:18.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"first_name\": \"Irwin\",\n        \"last_name\": \"Gaylord\",\n        \"email\": \"dianna38@example.com\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:19.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:19.000000Z\"\n    },\n    {\n        \"id\": 9,\n        \"first_name\": \"Kendrick\",\n        \"last_name\": \"Brakus\",\n        \"email\": \"gerlach.violette@example.net\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:19.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:19.000000Z\"\n    },\n    {\n        \"id\": 10,\n        \"first_name\": \"Osvaldo\",\n        \"last_name\": \"Von\",\n        \"email\": \"milford82@example.org\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:20.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:20.000000Z\"\n    },\n    {\n        \"id\": 11,\n        \"first_name\": \"Makayla\",\n        \"last_name\": \"Cassin\",\n        \"email\": \"kuhlman.gayle@example.net\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:20.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:20.000000Z\"\n    },\n    {\n        \"id\": 12,\n        \"first_name\": \"Uriah\",\n        \"last_name\": \"Wehner\",\n        \"email\": \"dane83@example.org\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T13:42:20.000000Z\",\n        \"updated_at\": \"2025-02-19T13:42:20.000000Z\"\n    },\n    {\n        \"id\": 13,\n        \"first_name\": \"Test\",\n        \"last_name\": \"user\",\n        \"email\": \"testuser123@gmail.com\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-20T10:12:01.000000Z\",\n        \"updated_at\": \"2025-02-20T10:12:01.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\":\"Test\",\n    \"last_name\":\"user\",\n    \"email\": \"ahmednasrullah@gmail.com\",\n    \"password\":\"test1122\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/users",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\":\"Test\",\n    \"last_name\":\"user\",\n    \"email\": \"ahmednasrullah@gmail.com\",\n    \"password\":\"test1122\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/users",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:13:53 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"first_name\": \"Test\",\n    \"last_name\": \"user\",\n    \"email\": \"ahmednasrullah@gmail.com\",\n    \"updated_at\": \"2025-02-20T10:13:53.000000Z\",\n    \"created_at\": \"2025-02-20T10:13:53.000000Z\",\n    \"id\": 14\n}"
+						}
+					]
+				},
+				{
+					"name": "Show User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/users/1",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/users/1",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:14:05 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"first_name\": \"Test\",\n    \"last_name\": \"user\",\n    \"email\": \"ahmednasrullah77@gmail.com\",\n    \"status\": 1,\n    \"created_at\": \"2025-02-19T12:41:04.000000Z\",\n    \"updated_at\": \"2025-02-19T18:46:47.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Fetch Projects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiI1YmU0ZDExNTNmYTcyNTk5ZTE0ZjFkMTk1YTlmM2UzMjQ0Y2NhMjg5MDkxN2QyNjRmMjM2NTZhZGJiNjA0YWEzZWY4ZGZlOTcxODhhZGM2ZCIsImlhdCI6MTczOTk3MDc1OC44MTUwNzQsIm5iZiI6MTczOTk3MDc1OC44MTUwNzcsImV4cCI6MTc3MTUwNjc1OC44MTEwMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.gS1oCn29Ajpj_V1u5lfibUJjRozt-aUpzgxqRwpuaMR2sgKcAVKq8dpa7_JIDCua7ZZCte1YDXFGLgr1U-me2P6BWuborQ1v6KqUAnKbpw2dLDduW0Z0_eK-lXypSimX1aPdW1_SgnvvOIcXsoa2E-94gBi_jZKvmdSoO2LFI8VsYkz1Z9z29nY7ssTiYhYfFAcUnJ619aFKdoP-BiZlWnAYxlDHYYx-GT5Xps_eIfP9XfXIWTj_bBy04kVKubdEedYNFLI3B3avzee4jnUADJWkT3L5wkpku2EqE50-setpOFpXV3fXuHThvvyi0PQKx_zjqDPudbx6IzuSyXb7KEbpmSsNhL9Uv_494IBJsEm9Y4MtwswCsjNzg4cBgFECHdFcou0UOSBEyk75MPQ0onPPf8qEg8VtDxmRT_MP5jEsIiwg88Ecew6jySiRwsXHcStjD_pAyDxUQ7oELNWfLG_fYg0ybfjb4lYXpntQpYfZNVPmhvXNGrWAfoj78lBM7LxbKfuGnxvKVNhiyCcy55Q3r__E2W6L_aQj9Me5deqqJsjVD75qM0L0a4F-DaNL2Iq95InrhqbSwP0NUlYZyUjATtcxIoDQqPb58rBMlHM1PnaXAh_vXIzP-GwbFSmIZdgPPWWeUmR6Cr_09v-xqTIWm7dgGwrP6eyj57wpHag",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/users/5/projects",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"users",
+								"5",
+								"projects"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Fetch Projects",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/users/5/projects",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"users",
+										"5",
+										"projects"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:14:16 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 6,\n        \"name\": \"Jaskolski Ltd\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"pivot\": {\n            \"user_id\": 5,\n            \"project_id\": 6\n        },\n        \"attribute_values\": [\n            {\n                \"id\": 10,\n                \"attribute_id\": 1,\n                \"entity_id\": 6,\n                \"value\": \"Marketing\",\n                \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"attribute\": {\n                    \"id\": 1,\n                    \"name\": \"department\",\n                    \"type\": \"text\",\n                    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                    \"updated_at\": \"2025-02-20T10:06:16.000000Z\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Tromp-Padberg\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"pivot\": {\n            \"user_id\": 5,\n            \"project_id\": 7\n        },\n        \"attribute_values\": [\n            {\n                \"id\": 11,\n                \"attribute_id\": 1,\n                \"entity_id\": 7,\n                \"value\": \"Sales\",\n                \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"attribute\": {\n                    \"id\": 1,\n                    \"name\": \"department\",\n                    \"type\": \"text\",\n                    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                    \"updated_at\": \"2025-02-20T10:06:16.000000Z\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Block and Sons\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"pivot\": {\n            \"user_id\": 5,\n            \"project_id\": 11\n        },\n        \"attribute_values\": [\n            {\n                \"id\": 15,\n                \"attribute_id\": 1,\n                \"entity_id\": 11,\n                \"value\": \"Finance\",\n                \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"attribute\": {\n                    \"id\": 1,\n                    \"name\": \"department\",\n                    \"type\": \"text\",\n                    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                    \"updated_at\": \"2025-02-20T10:06:16.000000Z\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Labadie LLC\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"pivot\": {\n            \"user_id\": 5,\n            \"project_id\": 12\n        },\n        \"attribute_values\": [\n            {\n                \"id\": 16,\n                \"attribute_id\": 1,\n                \"entity_id\": 12,\n                \"value\": \"Finance\",\n                \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"attribute\": {\n                    \"id\": 1,\n                    \"name\": \"department\",\n                    \"type\": \"text\",\n                    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                    \"updated_at\": \"2025-02-20T10:06:16.000000Z\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Jaskolski-Mills\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"pivot\": {\n            \"user_id\": 5,\n            \"project_id\": 14\n        },\n        \"attribute_values\": [\n            {\n                \"id\": 18,\n                \"attribute_id\": 1,\n                \"entity_id\": 14,\n                \"value\": \"Marketing\",\n                \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"updated_at\": \"2025-02-19T23:14:05.000000Z\",\n                \"attribute\": {\n                    \"id\": 1,\n                    \"name\": \"department\",\n                    \"type\": \"text\",\n                    \"created_at\": \"2025-02-19T13:38:30.000000Z\",\n                    \"updated_at\": \"2025-02-20T10:06:16.000000Z\"\n                }\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Fetch Timesheets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/users/5/timesheets",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"users",
+								"5",
+								"timesheets"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Fetch Timesheets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/users/5/timesheets",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"users",
+										"5",
+										"timesheets"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:14:36 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 7,\n        \"user_id\": 5,\n        \"project_id\": 6,\n        \"task_name\": \"Coating Machine Operator\",\n        \"date\": \"1991-11-04\",\n        \"hours\": \"7.90\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 11,\n        \"user_id\": 5,\n        \"project_id\": 7,\n        \"task_name\": \"Precision Dyer\",\n        \"date\": \"2020-03-27\",\n        \"hours\": \"5.22\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 23,\n        \"user_id\": 5,\n        \"project_id\": 11,\n        \"task_name\": \"Sawing Machine Operator\",\n        \"date\": \"2011-10-15\",\n        \"hours\": \"5.97\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 29,\n        \"user_id\": 5,\n        \"project_id\": 12,\n        \"task_name\": \"Copy Machine Operator\",\n        \"date\": \"2007-11-18\",\n        \"hours\": \"2.43\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 37,\n        \"user_id\": 5,\n        \"project_id\": 14,\n        \"task_name\": \"Highway Maintenance Worker\",\n        \"date\": \"2007-10-01\",\n        \"hours\": \"3.58\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiJjY2M3YmJiYmU0YzM3NjkxMDVlYWQzNWJiZTY0MDIwMGVlNDE3ZWViYTAzMzMyZDllNTAzNmM2Y2Q4ODU2ZmJmYTM5NWYxNmZiYWVmY2NmNiIsImlhdCI6MTc0MDA0NjI5Ni4xNDM0NDYsIm5iZiI6MTc0MDA0NjI5Ni4xNDM0NDgsImV4cCI6MTc3MTU4MjI5Ni4xMzcyMjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.fv2dD5FAsCuTVxE0wwNVaUm3HVT3_j3wGQNYhX3ytyszDqmDPVRHQKNx0H8LGqiuWggfbPUOM8fuiwZ7MsVacoN3cSg1kyy0mB-antA9gPRvEsngTIpRPmSJI2ftQCNPi2ZYocZPrFD0wAt34ClSLMGxdqu3ZpDDT7oIaOTKLS4h90kE5SF_CuB_4SmC7hA1W3eVpOOzje5N1LDQn4af_ZUdYFnp2eY9DBWJTO-_DczNECXpM64lervOP2_CLwVK3VtZDz8ybTZkcjZ4hP9Uteg0P2YvM6_vab9Bvy5P9uWUwFbZoOvhCXDVUlCeCdsB2-pwB9nXabzM0q8E1V0nKuxKDq0fahX6iSKsq0aYGK45WijcAAkHkt7WlXPRKQdPJLbFPEtFuvL7pzJCVjCYlJR84M7OUVsGCx0t2Bv1uDadxlSKMxxrR5p-lz33HYCEL-YankJAUEspmYzOLtqP3NzPpnI45n23c51Ti-sG2DkDP9a41KbtZ-SEIKIV-tjogyJ5--jhV-PRFPK5lYPnF1D64ym0XNjI0De76knnI9gLJx9BADDO67C7FRrM-QVAURHUzgTX_AiaSFE4A8gsWjkF_MU-S2WwYqs2B3oaVRN0nD3WFG-1KKQk4lsEGh9-jROOd5OWU_IoGH9_4Sfa4ZMQNizcxMeu8hQwDq_JQfE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\":\"Johhh\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/users/15",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"users",
+								"15"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\":\"Johhh\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/users/15",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"users",
+										"15"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 11:52:56 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User updated successfully\",\n    \"user\": {\n        \"id\": 15,\n        \"first_name\": \"Johhh\",\n        \"last_name\": \"Doe\",\n        \"email\": \"john.doe@example.com\",\n        \"status\": 1,\n        \"created_at\": \"2025-02-20T11:42:07.000000Z\",\n        \"updated_at\": \"2025-02-20T11:52:56.000000Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Log Timesheet",
+			"item": [
+				{
+					"name": "Log Timesheet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"task_name\":\"Total Hours completed\",\n    \"date\":\"2024-02-02\",\n    \"hours\":2.5,\n    \"user_id\":1,\n    \"project_id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/timesheets",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"timesheets"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Log Timesheet",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"task_name\":\"Total Hours completed\",\n    \"date\":\"2024-02-02\",\n    \"hours\":2.5,\n    \"user_id\":1,\n    \"project_id\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/timesheets",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"timesheets"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:14:59 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"task_name\": \"Total Hours completed\",\n    \"date\": \"2024-02-02\",\n    \"hours\": 2.5,\n    \"user_id\": 1,\n    \"project_id\": 1,\n    \"updated_at\": \"2025-02-20T10:14:59.000000Z\",\n    \"created_at\": \"2025-02-20T10:14:59.000000Z\",\n    \"id\": 38\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Timesheet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"task_name\":\"Total Hours completed so far...\",\n    \"date\":\"2024-01-02\",\n    \"hours\":3.5,\n    \"user_id\":1,\n    \"project_id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/timesheets/2",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"timesheets",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Timesheet",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"task_name\":\"Total Hours completed so far...\",\n    \"date\":\"2024-01-02\",\n    \"hours\":3.5,\n    \"user_id\":1,\n    \"project_id\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/timesheets/2",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"timesheets",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:51:48 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"user_id\": 1,\n    \"project_id\": 1,\n    \"task_name\": \"Total Hours completed so far...\",\n    \"date\": \"2024-01-02\",\n    \"hours\": 3.5,\n    \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n    \"updated_at\": \"2025-02-20T10:51:48.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Timesheet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/timesheets/2",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"timesheets",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Projects Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/timesheets/2",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"timesheets",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:53:21 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"user_id\": 1,\n    \"project_id\": 1,\n    \"task_name\": \"Total Hours completed so far...\",\n    \"date\": \"2024-01-02\",\n    \"hours\": \"3.50\",\n    \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n    \"updated_at\": \"2025-02-20T10:51:48.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Fetch Timesheets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/timesheets",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"timesheets"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://laravel-backend-assessmet.test/api/timesheets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/timesheets",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"timesheets"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:52:25 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"project_id\": 1,\n        \"task_name\": \"Total Hours completed so far...\",\n        \"date\": \"2024-01-02\",\n        \"hours\": \"3.50\",\n        \"created_at\": \"2025-02-19T15:42:09.000000Z\",\n        \"updated_at\": \"2025-02-19T15:43:14.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"user_id\": 1,\n        \"project_id\": 1,\n        \"task_name\": \"Total Hours completed so far...\",\n        \"date\": \"2024-01-02\",\n        \"hours\": \"3.50\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-20T10:51:48.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"user_id\": 4,\n        \"project_id\": 5,\n        \"task_name\": \"Ship Mates\",\n        \"date\": \"2006-10-07\",\n        \"hours\": \"2.89\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"user_id\": 6,\n        \"project_id\": 5,\n        \"task_name\": \"Order Clerk\",\n        \"date\": \"1971-06-08\",\n        \"hours\": \"4.06\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"user_id\": 12,\n        \"project_id\": 5,\n        \"task_name\": \"Waste Treatment Plant Operator\",\n        \"date\": \"2011-11-07\",\n        \"hours\": \"2.31\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"user_id\": 1,\n        \"project_id\": 6,\n        \"task_name\": \"Machine Operator\",\n        \"date\": \"1976-09-04\",\n        \"hours\": \"6.05\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"user_id\": 5,\n        \"project_id\": 6,\n        \"task_name\": \"Coating Machine Operator\",\n        \"date\": \"1991-11-04\",\n        \"hours\": \"7.90\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"user_id\": 7,\n        \"project_id\": 6,\n        \"task_name\": \"Janitor\",\n        \"date\": \"2000-11-22\",\n        \"hours\": \"6.33\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 9,\n        \"user_id\": 9,\n        \"project_id\": 6,\n        \"task_name\": \"Agricultural Inspector\",\n        \"date\": \"1988-10-05\",\n        \"hours\": \"1.13\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 10,\n        \"user_id\": 12,\n        \"project_id\": 6,\n        \"task_name\": \"Professor\",\n        \"date\": \"2003-01-19\",\n        \"hours\": \"2.46\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 11,\n        \"user_id\": 5,\n        \"project_id\": 7,\n        \"task_name\": \"Precision Dyer\",\n        \"date\": \"2020-03-27\",\n        \"hours\": \"5.22\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 12,\n        \"user_id\": 7,\n        \"project_id\": 7,\n        \"task_name\": \"Fish Hatchery Manager\",\n        \"date\": \"1993-08-17\",\n        \"hours\": \"1.65\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 13,\n        \"user_id\": 1,\n        \"project_id\": 8,\n        \"task_name\": \"Door To Door Sales\",\n        \"date\": \"2012-10-02\",\n        \"hours\": \"7.46\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 14,\n        \"user_id\": 3,\n        \"project_id\": 8,\n        \"task_name\": \"Plant and System Operator\",\n        \"date\": \"2007-12-04\",\n        \"hours\": \"5.02\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 15,\n        \"user_id\": 4,\n        \"project_id\": 8,\n        \"task_name\": \"Precision Mold and Pattern Caster\",\n        \"date\": \"2017-02-14\",\n        \"hours\": \"2.09\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 16,\n        \"user_id\": 11,\n        \"project_id\": 8,\n        \"task_name\": \"Ship Carpenter and Joiner\",\n        \"date\": \"1982-03-18\",\n        \"hours\": \"4.19\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 17,\n        \"user_id\": 3,\n        \"project_id\": 9,\n        \"task_name\": \"Electronics Engineering Technician\",\n        \"date\": \"1982-10-18\",\n        \"hours\": \"7.57\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 18,\n        \"user_id\": 6,\n        \"project_id\": 9,\n        \"task_name\": \"Biologist\",\n        \"date\": \"1979-02-22\",\n        \"hours\": \"1.57\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 19,\n        \"user_id\": 7,\n        \"project_id\": 9,\n        \"task_name\": \"Transportation and Material-Moving\",\n        \"date\": \"2022-02-11\",\n        \"hours\": \"2.22\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 20,\n        \"user_id\": 8,\n        \"project_id\": 9,\n        \"task_name\": \"Rigger\",\n        \"date\": \"2000-08-18\",\n        \"hours\": \"2.35\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 21,\n        \"user_id\": 9,\n        \"project_id\": 10,\n        \"task_name\": \"Child Care\",\n        \"date\": \"2002-07-02\",\n        \"hours\": \"4.87\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 22,\n        \"user_id\": 10,\n        \"project_id\": 10,\n        \"task_name\": \"Paper Goods Machine Operator\",\n        \"date\": \"1983-08-18\",\n        \"hours\": \"1.42\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 23,\n        \"user_id\": 5,\n        \"project_id\": 11,\n        \"task_name\": \"Sawing Machine Operator\",\n        \"date\": \"2011-10-15\",\n        \"hours\": \"5.97\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 24,\n        \"user_id\": 8,\n        \"project_id\": 11,\n        \"task_name\": \"Account Manager\",\n        \"date\": \"1971-09-18\",\n        \"hours\": \"2.60\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 25,\n        \"user_id\": 9,\n        \"project_id\": 11,\n        \"task_name\": \"Producer\",\n        \"date\": \"1999-07-31\",\n        \"hours\": \"1.91\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 26,\n        \"user_id\": 10,\n        \"project_id\": 11,\n        \"task_name\": \"Animal Trainer\",\n        \"date\": \"1986-08-18\",\n        \"hours\": \"6.89\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 27,\n        \"user_id\": 11,\n        \"project_id\": 11,\n        \"task_name\": \"Veterinary Technician\",\n        \"date\": \"1978-01-26\",\n        \"hours\": \"1.26\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 28,\n        \"user_id\": 1,\n        \"project_id\": 12,\n        \"task_name\": \"Food Preparation and Serving Worker\",\n        \"date\": \"1976-07-16\",\n        \"hours\": \"3.01\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 29,\n        \"user_id\": 5,\n        \"project_id\": 12,\n        \"task_name\": \"Copy Machine Operator\",\n        \"date\": \"2007-11-18\",\n        \"hours\": \"2.43\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 30,\n        \"user_id\": 8,\n        \"project_id\": 12,\n        \"task_name\": \"Postal Service Mail Sorter\",\n        \"date\": \"2004-10-12\",\n        \"hours\": \"6.21\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 31,\n        \"user_id\": 9,\n        \"project_id\": 12,\n        \"task_name\": \"Transportation Manager\",\n        \"date\": \"2014-06-04\",\n        \"hours\": \"1.00\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 32,\n        \"user_id\": 7,\n        \"project_id\": 13,\n        \"task_name\": \"Forest Fire Fighting Supervisor\",\n        \"date\": \"2018-05-21\",\n        \"hours\": \"7.54\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 33,\n        \"user_id\": 10,\n        \"project_id\": 13,\n        \"task_name\": \"Textile Knitting Machine Operator\",\n        \"date\": \"1978-04-20\",\n        \"hours\": \"1.70\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 34,\n        \"user_id\": 12,\n        \"project_id\": 13,\n        \"task_name\": \"Ship Pilot\",\n        \"date\": \"1978-09-07\",\n        \"hours\": \"1.94\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 35,\n        \"user_id\": 2,\n        \"project_id\": 14,\n        \"task_name\": \"Computer Operator\",\n        \"date\": \"1979-12-11\",\n        \"hours\": \"6.97\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 36,\n        \"user_id\": 4,\n        \"project_id\": 14,\n        \"task_name\": \"Dragline Operator\",\n        \"date\": \"1983-01-27\",\n        \"hours\": \"4.74\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 37,\n        \"user_id\": 5,\n        \"project_id\": 14,\n        \"task_name\": \"Highway Maintenance Worker\",\n        \"date\": \"2007-10-01\",\n        \"hours\": \"3.58\",\n        \"created_at\": \"2025-02-19T23:14:05.000000Z\",\n        \"updated_at\": \"2025-02-19T23:14:05.000000Z\"\n    },\n    {\n        \"id\": 38,\n        \"user_id\": 1,\n        \"project_id\": 1,\n        \"task_name\": \"Total Hours completed\",\n        \"date\": \"2024-02-02\",\n        \"hours\": \"2.50\",\n        \"created_at\": \"2025-02-20T10:14:59.000000Z\",\n        \"updated_at\": \"2025-02-20T10:14:59.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Delete Timesheet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTNmY2U2ZS0zNWZhLTRhNzYtOTAwMC1mZWI3MjkwNDQxZTIiLCJqdGkiOiIyNzdlNzk5MmY1MjdmY2UxMWIzZGE3MmVhNzQzMTkxMjBiZDdhMDRlNGM1YzJhNmU3NDA0YjhlY2M2Y2YzNDRiN2ZhMmIzY2FmYjcyM2QwNyIsImlhdCI6MTc0MDA0NjM5My4xOTY1NTEsIm5iZiI6MTc0MDA0NjM5My4xOTY1NTMsImV4cCI6MTc3MTU4MjM5My4xOTI2OTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JDSpgRweuSbE3rfcD-7vbNVMXa0HOqdpqlYw3eHELta6qd46bxDZl6yfdABakYiVg9ydnAsyNnQC37Cvy3T2dYzcnVI_zwlAn3j5A_zBEEN3R3P_wCzhOiBmTuAvN1lSKCad_IAsXY1tZzlvWWp5gZMaFtIUabCiS6gVGZMJ2LiiWD6quG0lDe62QaFOez0hy9JjsVyUZT9730PSbeFzaO6zBL_qwDtOnCrT-ql2zRTukS2hjNh3oS3RU7nwSe8iMJQc_IgvZ9VANgc2FKVjdbnkj8NozREZupaMX95OpDfEljReFrFxTN37kL4myM8hqA21ITWYod-bRxG14WA9-seJ4JloPr7ajGdWbIQArUCKYC1-mDteqUFbh2tZNRt41zCzjYtK68fNx4poaBs4YM0_GtAVxYXIfg0iKqFHm1_daCAk_EK2j43S-k03imIwr9n1IgWVoxus9OxdaTh9aE1yAfsGNvnRvxbRg1ny8voheVAVPpFlWOewD4oP_3_Kzfr2AdRUNqJqsJ63f5_gv9FAL5usjuzXzdYsJyThLVV-OlQvm4mC-Wg1nU8eAWNo7QOXd_H4OpbLWq7qPqfR663xaLbu0REp-wYLLjns4byRz3zcnupV7asX_wRm7_2VkSrxAD77seX2-VllffSfLVIw0TqlSQyPCV2fHyuJxCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://laravel-backend-assessmet.test/api/timesheets/38",
+							"protocol": "http",
+							"host": [
+								"laravel-backend-assessmet",
+								"test"
+							],
+							"path": [
+								"api",
+								"timesheets",
+								"38"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://laravel-backend-assessmet.test/api/timesheets/38",
+									"protocol": "http",
+									"host": [
+										"laravel-backend-assessmet",
+										"test"
+									],
+									"path": [
+										"api",
+										"timesheets",
+										"38"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.16"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Feb 2025 10:54:03 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Timesheet deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

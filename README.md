@@ -8,7 +8,10 @@ This project is a Laravel-based RESTful API that provides authentication, user m
 
 -   API Schema documentation: http://16.171.64.133/api/documentation
 
--   MYSQL dump file is in `storage/database.sql`
+-   MYSQL dump file is in `storage/dump/database.sql`
+-   Postman collection json file: `storage/dump/Laravel Backend Assessment.postman_collection.json`
+
+-   GitHub Repository: https://github.com/Creative-developers/laravel-backend-assessmet
 
 -   Test credentials:
     -   email: `testuser@gmail.com`
@@ -126,7 +129,7 @@ This project is a Laravel-based RESTful API that provides authentication, user m
     "attributes": [
         {
             "attribute_id": 1,
-            "value": "Sales"  // Value is the column in attributeValue
+            "value": "Sales" // Value is the column in attributeValue
         },
         {
             "attribute_id": 2,
@@ -138,7 +141,7 @@ This project is a Laravel-based RESTful API that provides authentication, user m
         }
     ]
 }
-
+```
 
 ### Filters Example
 
@@ -164,4 +167,7 @@ This project is a Laravel-based RESTful API that provides authentication, user m
 | **DELETE** | `/api/timesheets/{timesheet}` | Delete a timesheet           | `timesheet` (Timesheet ID)                               | Yes           |
 
 ---
+
+```
+
 ```
