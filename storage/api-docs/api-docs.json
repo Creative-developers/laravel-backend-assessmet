@@ -7,9 +7,7 @@
     "paths": {
         "/api/attributes": {
             "get": {
-                "tags": [
-                    "Attributes"
-                ],
+                "tags": ["Attributes"],
                 "summary": "Get all attributes",
                 "operationId": "e48983aaee64bf1da038f1378aff0c81",
                 "responses": {
@@ -37,9 +35,7 @@
                 ]
             },
             "post": {
-                "tags": [
-                    "Attributes"
-                ],
+                "tags": ["Attributes"],
                 "summary": "Create a new attribute",
                 "operationId": "48e2284fe9ed7ecdc495aa7191e74084",
                 "requestBody": {
@@ -79,9 +75,7 @@
         },
         "/api/attributes/{attribute}": {
             "get": {
-                "tags": [
-                    "Attributes"
-                ],
+                "tags": ["Attributes"],
                 "summary": "Get a single attribute by ID",
                 "operationId": "a7e093c764f78918851a4bb3220f27b4",
                 "parameters": [
@@ -120,9 +114,7 @@
                 ]
             },
             "put": {
-                "tags": [
-                    "Attributes"
-                ],
+                "tags": ["Attributes"],
                 "summary": "Update an existing attribute",
                 "operationId": "a7fef12bab86c4124d12cfb2a9f57452",
                 "parameters": [
@@ -171,9 +163,7 @@
                 ]
             },
             "delete": {
-                "tags": [
-                    "Attributes"
-                ],
+                "tags": ["Attributes"],
                 "summary": "Delete an attribute",
                 "operationId": "ac4021e09ece6c1e01a5746946d8bebf",
                 "parameters": [
@@ -220,9 +210,7 @@
         },
         "/api/attributeValues": {
             "get": {
-                "tags": [
-                    "Attribute Values"
-                ],
+                "tags": ["Attribute Values"],
                 "summary": "Get all attributes values",
                 "operationId": "8acdc4d4b1d54b4a64d45701a7886de6",
                 "responses": {
@@ -252,9 +240,7 @@
         },
         "/api/attributeValues/{attributeValue}": {
             "get": {
-                "tags": [
-                    "Attribute Values"
-                ],
+                "tags": ["Attribute Values"],
                 "summary": "Get a single attribute value by ID",
                 "operationId": "98f5fbdac301999b8a0ca23f53d003c6",
                 "parameters": [
@@ -293,9 +279,7 @@
                 ]
             },
             "delete": {
-                "tags": [
-                    "Attribute Values"
-                ],
+                "tags": ["Attribute Values"],
                 "summary": "Delete an attribute value",
                 "operationId": "c8fc014c69b036bd58dd2ba8cb31409c",
                 "parameters": [
@@ -329,9 +313,7 @@
         },
         "/api/register": {
             "post": {
-                "tags": [
-                    "Auth"
-                ],
+                "tags": ["Auth"],
                 "summary": "Register a new user",
                 "operationId": "8a56853624e025573120a09a4c75d468",
                 "parameters": [
@@ -384,9 +366,7 @@
         },
         "/api/login": {
             "post": {
-                "tags": [
-                    "Auth"
-                ],
+                "tags": ["Auth"],
                 "summary": "Login user",
                 "operationId": "a3b306d14572d1f4bd6c064b3233e7b8",
                 "requestBody": {
@@ -394,20 +374,17 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "required": [
-                                    "email",
-                                    "password"
-                                ],
+                                "required": ["email", "password"],
                                 "properties": {
                                     "email": {
                                         "type": "string",
                                         "format": "email",
-                                        "example": "user@example.com"
+                                        "example": "testuser@gmail.com"
                                     },
                                     "password": {
                                         "type": "string",
                                         "format": "password",
-                                        "example": "password123"
+                                        "example": "test1122"
                                     }
                                 },
                                 "type": "object"
@@ -456,9 +433,7 @@
         },
         "/api/logout": {
             "post": {
-                "tags": [
-                    "Auth"
-                ],
+                "tags": ["Auth"],
                 "summary": "Logout user",
                 "operationId": "fe8f3429cd6979b3b4517e186505f9f9",
                 "responses": {
@@ -504,9 +479,7 @@
         },
         "/api/timesheets": {
             "get": {
-                "tags": [
-                    "Timesheets"
-                ],
+                "tags": ["Timesheets"],
                 "summary": "Get all timesheets",
                 "operationId": "7d14e54a11044a9563dc96a368456248",
                 "responses": {
@@ -534,9 +507,7 @@
                 ]
             },
             "post": {
-                "tags": [
-                    "Timesheets"
-                ],
+                "tags": ["Timesheets"],
                 "summary": "Create a new timesheet",
                 "operationId": "8ba9cc447e3f3bec76dcea5d1b31250e",
                 "requestBody": {
@@ -605,9 +576,7 @@
         },
         "/api/timesheets/{timesheet}": {
             "get": {
-                "tags": [
-                    "Timesheets"
-                ],
+                "tags": ["Timesheets"],
                 "summary": "Get a single timesheet by ID",
                 "operationId": "e1f73033fe98f8c89f323ddd20dd27c4",
                 "parameters": [
@@ -646,9 +615,7 @@
                 ]
             },
             "put": {
-                "tags": [
-                    "Timesheets"
-                ],
+                "tags": ["Timesheets"],
                 "summary": "Update an existing timesheet",
                 "operationId": "658d246fd5b31661bb6ce5ee47466731",
                 "parameters": [
@@ -731,9 +698,7 @@
                 ]
             },
             "delete": {
-                "tags": [
-                    "Timesheets"
-                ],
+                "tags": ["Timesheets"],
                 "summary": "Delete a timesheet",
                 "operationId": "f765a7ec3bce635ac0487d9079e6beb5",
                 "parameters": [
@@ -767,9 +732,7 @@
         },
         "/api/users": {
             "get": {
-                "tags": [
-                    "Users"
-                ],
+                "tags": ["Users"],
                 "summary": "Get list of users",
                 "operationId": "c457726701591d1183b53aa71fc13441",
                 "responses": {
@@ -797,9 +760,7 @@
                 ]
             },
             "post": {
-                "tags": [
-                    "Users"
-                ],
+                "tags": ["Users"],
                 "summary": "Create a new user",
                 "operationId": "592819a0265360b2014512d6dbfaf0e7",
                 "requestBody": {
@@ -865,9 +826,7 @@
         },
         "/api/users/{user}/projects": {
             "get": {
-                "tags": [
-                    "Users"
-                ],
+                "tags": ["Users"],
                 "summary": "Get user projects",
                 "operationId": "05ef1ac99cbd033a6f8556e33d4a6447",
                 "parameters": [
@@ -912,9 +871,7 @@
         },
         "/api/users/{user}/timesheets": {
             "get": {
-                "tags": [
-                    "Users"
-                ],
+                "tags": ["Users"],
                 "summary": "Get user logged timesheets",
                 "operationId": "a1bc38d368d6344cd37765e7757e9cea",
                 "parameters": [
@@ -959,9 +916,7 @@
         },
         "/api/users/{user}": {
             "get": {
-                "tags": [
-                    "Users"
-                ],
+                "tags": ["Users"],
                 "summary": "Get a user by ID",
                 "operationId": "d3a14968f8b7a072620c75c7c78ed6f8",
                 "parameters": [
@@ -1001,9 +956,7 @@
                 ]
             },
             "put": {
-                "tags": [
-                    "Users"
-                ],
+                "tags": ["Users"],
                 "summary": "Update user details",
                 "operationId": "e29fc231c7937ab09483d35e6e3d1214",
                 "parameters": [
@@ -1080,9 +1033,7 @@
                 ]
             },
             "delete": {
-                "tags": [
-                    "Users"
-                ],
+                "tags": ["Users"],
                 "summary": "Delete a user",
                 "operationId": "e0f9a385a1d6788b99e519bd98cf7239",
                 "parameters": [
@@ -1155,10 +1106,7 @@
             "AttributeRequest": {
                 "title": "Attribute Request",
                 "description": "Schema for creating an attribute",
-                "required": [
-                    "name",
-                    "type"
-                ],
+                "required": ["name", "type"],
                 "properties": {
                     "name": {
                         "type": "string",
@@ -1167,12 +1115,7 @@
                     },
                     "type": {
                         "type": "string",
-                        "enum": [
-                            "text",
-                            "number",
-                            "date",
-                            "select"
-                        ],
+                        "enum": ["text", "number", "date", "select"],
                         "example": "text",
                         "nullable": true
                     }
@@ -1193,12 +1136,7 @@
                     },
                     "type": {
                         "type": "string",
-                        "enum": [
-                            "text",
-                            "number",
-                            "date",
-                            "select"
-                        ],
+                        "enum": ["text", "number", "date", "select"],
                         "example": "text"
                     },
                     "created_at": {
